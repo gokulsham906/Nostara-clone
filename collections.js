@@ -1,6 +1,6 @@
 import {products} from "./products.js";
 
-var offerBar = document.querySelector(".offer-bar")
+let offerBar = document.querySelector(".offer-bar")
 
 document.getElementById("offer-close").addEventListener("click",
 
@@ -9,8 +9,8 @@ function(){
 }
 )
 
-var sideNavMenu=document.querySelector(".navbar-menu-toggle")
-var sidenavbar = document.querySelector(".side-navbar")
+let sideNavMenu=document.querySelector(".navbar-menu-toggle")
+let sidenavbar = document.querySelector(".side-navbar")
 sideNavMenu.addEventListener("click",function(){
    
     sidenavbar.style.marginLeft="0px"
@@ -20,9 +20,9 @@ document.getElementById("side-navbar-close").addEventListener("click",()=>{
     document.querySelector(".side-navbar").style.marginLeft = "-60%"
 })
 
-var container=document.querySelector(".products")
+let container=document.querySelector(".products")
 products.forEach((product)=>{
-    var createItem = document.createElement("div")
+    let createItem = document.createElement("div")
     createItem.classList.add("product")
     createItem.innerHTML=` <img style="width: 20vw;" src="img/${product.src}">
     <h1>${product.name}</h1>
@@ -32,8 +32,8 @@ products.forEach((product)=>{
     container.append(createItem)
 })
 
-var filterList =[]
-var tags = document.getElementsByName("tags")
+let filterList =[]
+let tags = document.getElementsByName("tags")
 console.log(tags)
 
 tags.forEach((tag)=>{
@@ -56,12 +56,12 @@ tags.forEach((tag)=>{
 
 
 function update()
-{    var productList = document.querySelectorAll(".product")
-    for(var i=0;i<productList.length;i++){
-        var check = false
-        var product=productList[i]
+{    let productList = document.querySelectorAll(".product")
+    for(let i=0;i<productList.length;i++){
+        let check = false
+        let product=productList[i]
         console.log(product)
-        var temp=product.querySelector("tags").innerHTML
+        let temp=product.querySelector("tags").innerHTML
        
         console.log("elemen"+temp)
         

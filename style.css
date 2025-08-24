@@ -175,7 +175,7 @@ z-index:3;
     position:absolute;
     top:35%;
     right:5%;
-    z-index: 1;
+  
    }
 
    .slider-right-button i{
@@ -469,7 +469,7 @@ h2{
 
   .product-section{
     flex-basis: 75%;
-    position: absolute;
+    position: relative;
   }
 
   .vertical-line{
@@ -484,13 +484,15 @@ h2{
 
   }
 
-  .filter-section-arrivals,.filter-section-colors,.filter-section-occasion{
+  .filter-section-price,.filter-section-arrivals,.filter-section-colors,.filter-section-occasion{
     margin-top: 3vw;
     margin-bottom:10px;
+  
   }
 
   .product-section{
     padding:10px;
+    
     
 
     
@@ -504,7 +506,8 @@ h2{
     padding:10px;
     display: flex;
     align-items: center;
-    width:95%;
+    width:50%;
+    margin-left: 380px;
   }
     .navbar-search input{
         border:none;
@@ -525,15 +528,17 @@ h2{
     font-size:1vw;
   }
 
-  .product img{
-    overflow-clip-margin: content-box;
-    overflow: clip;
-  }
+  
 
   .product h1{
     display:block;
     font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end:0.67em ;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
   }
+
 
 
 

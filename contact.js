@@ -1,5 +1,5 @@
-var sideNavMenu=document.getElementById("side-navbar-activate")
-var sidenavbar = document.querySelector(".side-navbar")
+let sideNavMenu=document.getElementById("side-navbar-activate")
+let sidenavbar = document.querySelector(".side-navbar")
 sideNavMenu.addEventListener("click",function(){
     sidenavbar.style.marginLeft="0px"
 })
